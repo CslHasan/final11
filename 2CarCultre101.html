@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Culture 101</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #001f3d; /* Dark background */
+      color: white; /* White text */
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+      margin: 20px;
+      background-color: #34495e; /* Darker section background */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .btn {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #f1c40f;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery-container img {
+      max-width: 100%;
+      height: auto;
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Car Culture 101</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-target="about">About Cars</a></li>
+        <li><a href="#" class="nav-link" data-target="mods">Car Mods</a></li>
+        <li><a href="#" class="nav-link" data-target="buying">Buying Tips</a></li>
+        <li><a href="#" class="nav-link" data-target="gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- Home Section -->
+    <section id="home" class="active">
+      <div class="hero">
+        <h2>Welcome to the Culture</h2>
+        <p>Whether you're a gearhead or just starting out, this site will put you on game. Learn the basics, explore mods, and understand real car knowledge.</p>
+        <a href="#" class="btn" id="start-btn">Start Learning</a>
+      </div>
+    </section>
+
+    <!-- About Cars Section -->
+    <section id="about">
+      <h2>How Cars Work</h2>
+      <p>Cars run on internal combustion engines that convert fuel into power. Key things to understand: horsepower (how fast), torque (how strong), and drivetrain types like FWD, RWD, and AWD.</p>
+
+      <h3>Key Components in a Car</h3>
+      <ul>
+        <li><strong>Engine:</strong> The heart of the car that powers it using fuel and air to generate power. It’s what makes the car go.</li>
+        <li><strong>Transmission:</strong> Responsible for sending power from the engine to the wheels, allowing the car to change speeds and shift gears smoothly.</li>
+        <li><strong>Brakes:</strong> A critical safety component, they use friction to slow or stop the car. Types include disc and drum brakes, each with their own system for operation.</li>
+        <li><strong>Suspension:</strong> Keeps the car's wheels in contact with the road. It helps absorb shocks and bumps, ensuring a smooth ride while handling the car’s weight and stability.</li>
+        <li><strong>Battery:</strong> Provides electrical power to start the car and run components like lights, air conditioning, and infotainment.</li>
+        <li><strong>Power Steering:</strong> Assists with steering, making it easier to turn the wheels, especially at low speeds or when parking.</li>
+        <li><strong>Tires:</strong> Provide grip and traction on the road. Different types of tires affect handling, comfort, and performance in various conditions.</li>
+      </ul>
+    </section>
+
+    <!-- Car Mods Section -->
+    <section id="mods">
+      <h2>Performance Car Mods</h2>
+      <p>Modding a car is all about making it truly yours. From performance upgrades to sound and style, mods unlock the full potential of your ride and make driving more exciting.</p>
+
+      <ul>
+        <li><strong>Cold Air Intake:</strong> Brings in cooler air to improve engine breathing, boost throttle response, and add power.</li>
+        <li><strong>Exhaust System:</strong> Enhances airflow and gives the car a louder, deeper sound while improving performance.</li>
+        <li><strong>Turbocharger:</strong> Forces more air into the engine to dramatically increase horsepower.</li>
+        <li><strong>ECU Tuning:</strong> Adjusts engine settings like fuel and timing to squeeze out more power and responsiveness.</li>
+        <li><strong>Suspension Upgrades:</strong> Improves handling with better control, reduced body roll, and a lower stance.</li>
+        <li><strong>Performance Tires:</strong> Provide more grip, faster acceleration, and better cornering.</li>
+      </ul>
+
+      <h3>Why Mods Matter</h3>
+      <p>Car mods transform a stock machine into something unique. Whether it’s more horsepower, tighter handling, or a louder exhaust note, the right setup makes every drive feel like an experience. It’s not just about speed—it’s about the connection between driver and machine.</p>
+    </section>
+
+    <!-- Buying Tips Section -->
+    <section id="buying">
+      <h2>How to Buy Your First Car</h2>
+      <p>Buying your first car can be an exciting but overwhelming experience. Here are some tips to help guide you through the process:</p>
+
+      <h3>1. Set a Budget</h3>
+      <p>Before you start looking at cars, determine how much you're willing to spend. Consider not only the car’s price but also insurance, maintenance, and fuel costs.</p>
+
+      <h3>2. Do Your Research</h3>
+      <p>Learn about different car models, their reliability, and their market value. Websites like Kelley Blue Book and Edmunds can provide you with valuable insights.</p>
+
+      <h3>3. Inspect the Car</h3>
+      <p>Always inspect a used car thoroughly. Check the exterior and interior for any damage, and ask about the vehicle’s history (accidents, repairs, etc.). If you’re unsure, take the car to a trusted mechanic.</p>
+
+      <h3>4. Run a Vehicle History Report</h3>
+      <p>Using the car's VIN (Vehicle Identification Number), you can run a report through services like Carfax or AutoCheck to check for accidents, ownership history, and more.</p>
+
+      <h3>5. Test Drive</h3>
+      <p>Never buy a car without taking it for a test drive. Pay attention to how it drives, brakes, and handles. Listen for any unusual sounds.</p>
+
+      <h3>6. Negotiate the Price</h3>
+      <p>Don’t settle for the asking price. Research the fair value of the car and negotiate a price that works for you. Be prepared to walk away if the deal doesn’t feel right.</p>
+
+      <h3>7. Check the Paperwork</h3>
+      <p>Make sure all the necessary paperwork is in order before purchasing. This includes the title, registration, and any repair or service records available.</p>
+
+      <h3>8. Avoid Rushing</h3>
+      <p>Take your time with the process. Don’t feel pressured to make a purchase until you’re sure it’s the right car for you.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Car Gallery</h2>
+      <p>Check out some of the coolest cars we've come across!</p>
+      <div class="gallery-container">
+        <img src="sf90.jpg" alt="Car 1" />
+        <img src="2.jpg" alt="Car 2" />
+        <img src="458.jpg" alt="Car 3" />
+        <img src="fordgt.jpg" alt="Car 4" />
+        <img src="idk.jpg" alt="Car 5" />
+        <img src="V6.jpg" alt="Car 6" />
+        <!-- Additional Images -->
+        <img src="bmw.jpg" alt="Car 7" />
+        <img src="ducatti.jpg" alt="Car 8" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Car Culture 101 | Built by Hasan</p>
+  </footer>
+
+  <script>
+    // Function to switch between sections
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        const target = event.target.getAttribute('data-target');
+
+        sections.forEach(section => {
+          section.classList.remove('active');
+        });
+
+        document.getElementById(target).classList.add('active');
+      });
+    });
+
+    // Start Learning Button Animation
+    const startButton = document.getElementById('start-btn');
+    startButton.addEventListener('click', () => {
+      document.getElementById('home').classList.remove('active');
+      document.getElementById('about').classList.add('active');
+    });
+  </script>
+</body>
+</html>
